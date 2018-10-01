@@ -10,7 +10,7 @@ class Triangle
   
   def kind
     if im_a_real_triangle1 == true && im_a_real_triangle2 == true 
-      puts true 
+    
     else 
       raise TriangleError 
     end 
