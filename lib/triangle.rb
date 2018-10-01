@@ -12,13 +12,17 @@ class Triangle
     
   end
   
+  def real_triangle1
+    side1.positive 
+  
     class TriangleError < StandardError
       
     end 
   end
 end
 
-class Triangle
+
+  class Triangle
   attr_accessor :x, :y, :z
   def initialize(x, y, z)
     @x = x
