@@ -13,7 +13,7 @@ class Triangle
     
     else 
       raise TriangleError 
-    end 
+    en
     
     if x == y && y == z && x == z
       :equilateral
