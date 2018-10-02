@@ -12,7 +12,7 @@ class Triangle
     if !(side1.positive? && side2.positive? && side3.positive?)
       raise TriangleError
       elsif
-      im_a_real_triangle2 == false
+      !(side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1)
       raise TriangleError
       else
       if (@side_1 == @side_2) && (@side_2 == @side_3)
@@ -24,14 +24,6 @@ class Triangle
       end
     end
   end 
-  
-  def im_a_real_triangle1
-    side1.positive? && side2.positive? && side3.positive?
-  end
-  
-  def im_a_real_triangle2
-    side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1
-  end
   
     class TriangleError < StandardError
       def message
