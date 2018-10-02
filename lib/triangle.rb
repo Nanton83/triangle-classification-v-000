@@ -8,17 +8,13 @@ class Triangle
     @side3 = side3
   end
   
-  def kind
-    if im_a_real_triangle1 != true && im_a_real_triangle2 != true
-      begin
-        raise TriangleError
-    rescue TriangleError => error
-      puts error.message
-    end
-  end 
-end
-    
-    
+  def kind()
+    if im_a_real_triangle1 == false
+      raise TriangleError
+      elsif
+      im_a_real_triangle2 == false
+      raise TriangleError
+      
   
   def im_a_real_triangle1
     side1.positive? && side2.positive? && side3.positive?
