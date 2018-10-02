@@ -9,23 +9,14 @@ class Triangle
   end
   
   def kind
-    if im_a_real_triangle1 == true && im_a_real_triangle2 == true 
+    if im_a_real_triangle1 != true && im_a_real_triangle2 != true
+      begin
+        raise TriangleError
+    rescue TriangleError => error
+      puts error.message
+    end
     
-    else 
-      raise TriangleError 
-    en
     
-    if x == y && y == z && x == z
-      :equilateral
-    elsif x != y && y != z && z != x
-      :scalene 
-    else 
-      :isosceles
-    end 
-  end
-      
-    
-  end
   
   def im_a_real_triangle1
     side1.positive? && side2.positive? && side3.positive?
@@ -36,7 +27,8 @@ class Triangle
   end
   
     class TriangleError < StandardError
-      
+      def message
+        "This is not a triangle"
     end 
   end
 end
