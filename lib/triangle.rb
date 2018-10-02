@@ -8,7 +8,7 @@ class Triangle
     @side3 = side3
   end
   
-  def kind()
+  def kind
     if !(side1.positive? && side2.positive? && side3.positive?)
       raise TriangleError
       elsif
