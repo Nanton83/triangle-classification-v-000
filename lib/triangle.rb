@@ -14,6 +14,7 @@ class Triangle
       elsif
       im_a_real_triangle2 == false
       raise TriangleError
+      
     end
   end 
   
