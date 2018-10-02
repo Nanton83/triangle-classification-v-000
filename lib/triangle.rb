@@ -9,7 +9,7 @@ class Triangle
   end
   
   def kind()
-    if im_a_real_triangle1 == false
+    if 
       raise TriangleError
       elsif
       im_a_real_triangle2 == false
