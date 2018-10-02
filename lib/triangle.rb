@@ -14,7 +14,8 @@ class Triangle
       elsif
       im_a_real_triangle2 == false
       raise TriangleError
-      
+    end
+  end 
   
   def im_a_real_triangle1
     side1.positive? && side2.positive? && side3.positive?
